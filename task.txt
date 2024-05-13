@@ -1,0 +1,11 @@
+Design a URL shortner service that takes in a valid URL and returns a shoetended URL , redirecting the user to the previously provides URL
+
+Also , keep the tracks of total visits/CLicks on the URL
+
+Routes : 
+
+POST/URL : Generates a new short URL and returns the shortened URL in the format example.com/random-id.
+
+GET/:id - redirects the user to the original URL
+
+GET / url/analytical/:id - Returns the clicks for the provided short id
