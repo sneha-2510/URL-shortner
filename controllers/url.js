@@ -14,7 +14,10 @@ async function generateNewShortURL(req, res) {
         visitHistory: []
     })
 
-    return res.json({ id: shortID })
+    return res.render('home', {
+        id: shortID
+    })
+    // return res.json({ id: shortID })
 }
 
 async function handleGetAnalytics(req, res) {
